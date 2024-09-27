@@ -25,7 +25,7 @@ ekf_se_odom:
   odom0_differential: false
   odom0_relative: false
 
-  imu0: imu/data
+  imu0: imu/data_1
   imu0_config: [false, false, false,
                 true,  true,  false,
                 false, false, false,
@@ -71,7 +71,7 @@ ekf_se_odom:
                                   0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    3.6e-05,    0.00141,    -7e-06,
                                   0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    -6.44e-06,    -7e-06,    0.00146]
 
-  imu1: imu/data_1
+  imu1: imu/data_2
   imu1_config: [false, false, false,
                 true,  true,  false,
                 false, false, false,
@@ -153,7 +153,7 @@ ekf_se_map:
   odom1_differential: false
   odom1_relative: false
 
-  imu0: imu/data
+  imu0: imu/data_1
   imu0_config: [false, false, false,
                 true,  true,  false,
                 false, false, false,
@@ -199,7 +199,7 @@ ekf_se_map:
                             0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    3.6e-05,    0.00141,    -7e-06,
                             0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    -6.44e-06,    -7e-06,    0.00146]
 
-  imu1: imu/data_1
+  imu1: imu/data_2
   imu1_config: [false, false, false,
                 true,  true,  false,
                 false, false, false,
