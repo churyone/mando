@@ -1,0 +1,26 @@
+<launch>
+
+    <!-- 전역 파라미터 설정 -->
+    <!-- <param name="start_mission_num" value="0"/> -->
+
+    <!-- odom 노드 실행 -->
+    <!-- <node pkg="ushmd" type="odom.py" name="odom"/> -->
+
+    <!-- mission 노드 실행 -->
+    <node pkg="ushmd" type="mission.py" name="mission" output="screen"/>
+
+    <!-- planning 노드 실행 -->
+    <node pkg="ushmd" type="planning.py" name="planning" output="screen"/>
+
+    <!-- yolo 노드 실행 -->
+    <node pkg="ushmd" type="yolo.py" name="yolo" output="screen"/>
+
+    <!-- control 노드 실행 -->
+    <node pkg="ushmd" type="control.py" name="control" output="screen">
+        <!-- 노드별 파라미터 설정 -->
+        <param name="vehicle_length" value="0.7"/>
+        <param name="lfd" value="3"/>
+        <param name="default_speed" value="2"/>
+    </node>
+
+</launch>
